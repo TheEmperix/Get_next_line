@@ -54,10 +54,10 @@ int	check_next_line(char *line)
 	while (line[i])
 	{
 		if (line[i] == '\n')
-			return (1);
+			return (0);
 		i++;
 	}
-	return (0);
+	return (1);
 }
 
 int	ft_read(int fd, char *buff, int *i)

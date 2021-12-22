@@ -33,7 +33,7 @@ char	*get_next_line(int fd)
 	line1 = ft_check(buff, &i);
 	if (!line1)
 		return (NULL);
-	while (!check_next_line(line1))
+	while (check_next_line(line1))
 	{
 		if (!ft_read(fd, buff, &i))
 			return (line1);
